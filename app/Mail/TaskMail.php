@@ -14,9 +14,7 @@ class TaskMail extends Mailable
     use Queueable, SerializesModels;
 
     private $data;
-    /**
-     * Create a new job instance.
-     */
+
     public function __construct($data)
     {
 
@@ -24,9 +22,6 @@ class TaskMail extends Mailable
         //
     }
 
-    /**
-     * Get the message envelope.
-     */
     public function envelope(): Envelope
     {
         return new Envelope(
@@ -34,9 +29,7 @@ class TaskMail extends Mailable
         );
     }
 
-    /**
-     * Get the message content definition.
-     */
+ 
     public function content(): Content
     {
         return new Content(
@@ -45,11 +38,7 @@ class TaskMail extends Mailable
         );
     }
 
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-     */
+
     public function attachments(): array
     {
         return [];

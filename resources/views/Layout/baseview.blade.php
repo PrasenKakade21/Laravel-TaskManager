@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="theme-color" content="#712cf9">
-        <title>Booking Management System | @yield('title')</title>
+        <title> Task Manager | @yield('title')</title>
         @include('layout.css')
         @yield('style')
     </head>
